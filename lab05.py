@@ -52,7 +52,7 @@ class BLPModel:
     def display_system_state(self, scenario_label="Current State"):
         print(f"\n{'='*20} BLP State {scenario_label} {'='*20}")
         
-        # Display Subjects
+        # subj
         print(f"{'TYPE':<10} | {'NAME':<12} | {'MAX LEVEL':<10} | {'CURR LEVEL':<10}")
         print("-" * 55)
         for name, attrs in self.subjects.items():
@@ -60,7 +60,7 @@ class BLPModel:
         
         print("\n" + "-" * 55)
         
-        # Display Objects
+        # obj
         print(f"{'TYPE':<10} | {'NAME':<12} | {'SECURITY LEVEL':<23}")
         print("-" * 55)
         for name, level in self.objects.items():
